@@ -50,9 +50,9 @@ def get_songs_by_artist(token, artist_id):
     json_result = json.loads(result.content)["tracks"]
     return json_result
 
-
+user_input = input("Enter your favorite artist: ")
 token = get_token()
-result = search_for_artist(token, "Kanye West")
+result = search_for_artist(token, user_input)
 artist_id = result["id"]
 songs = get_songs_by_artist(token, artist_id)
 
