@@ -1,3 +1,5 @@
+# Code for this Spotify API project
+
 from dotenv import load_dotenv
 import os
 import base64
